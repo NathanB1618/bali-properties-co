@@ -30,11 +30,14 @@ const Index = () => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add('in-view');
+          // Don't unobserve - this keeps the element visible even when scrolling away
         }
       });
     }, { threshold: 0.1 });
 
     document.querySelectorAll('.animated-element').forEach(element => {
+      // Add an initial class to hide elements
+      element.classList.add('animate-initial');
       observer.observe(element);
     });
 

@@ -14,35 +14,26 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 173 55% 39%; /* Bali teal */
-    --primary-foreground: 180 19% 93%;
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
 
-    --secondary: 41 77% 66%; /* Bali gold */
-    --secondary-foreground: 196 40% 24%; 
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 196 40% 24%; /* Bali deep */
-    --accent-foreground: 180 19% 93%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 173 55% 39%;
+    --ring: 222.2 84% 4.9%;
 
-    --radius: 0.5rem;
-
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --radius: 0.75rem;
   }
 
   .dark {
@@ -68,19 +59,11 @@
     --accent-foreground: 210 40% 98%;
 
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive-foreground: 210 40% 98%;
 
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
     --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
   }
 }
 
@@ -88,38 +71,38 @@
   * {
     @apply border-border;
   }
-
   body {
-    @apply bg-background text-foreground font-serif;
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-    @apply font-poppins font-medium;
+    @apply bg-background text-foreground;
   }
 }
 
-@layer components {
-  .section-container {
-    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20;
-  }
-  
-  .animated-element {
-    @apply opacity-0;
-  }
-  
-  .animated-element.in-view {
-    @apply animate-slide-up;
-  }
+/* Custom Bali Dream Investments Styles */
+.section-container {
+  @apply container mx-auto px-4 py-16 md:py-24;
+}
 
-  .hero-gradient {
-    background: linear-gradient(rgba(38, 70, 83, 0.7), rgba(42, 157, 143, 0.4));
-  }
-  
-  .property-card {
-    @apply transition-all duration-300 hover:shadow-xl hover:scale-[1.02] cursor-pointer;
-  }
-  
-  .text-gradient {
-    @apply bg-gradient-to-r from-bali-teal to-bali-deep bg-clip-text text-transparent;
-  }
+.hero-gradient {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.7) 100%);
+}
+
+/* Animation styles */
+.animated-element {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.6s ease-out, transform 0.8s ease-out;
+}
+
+.animate-initial {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Navbar styles when scrolled */
+.navbar-scrolled {
+  @apply bg-white shadow-md py-2;
 }
