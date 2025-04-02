@@ -81,6 +81,11 @@
   @apply container mx-auto px-4 py-16 md:py-24;
 }
 
+/* Reduced height testimonial section */
+.testimonial-section {
+  @apply py-10 md:py-16;
+}
+
 .hero-gradient {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.6) 100%);
 }

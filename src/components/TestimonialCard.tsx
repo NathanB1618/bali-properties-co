@@ -18,28 +18,28 @@ const TestimonialCard: FC<TestimonialCardProps> = ({
   image
 }) => {
   return (
-    <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow duration-300">
-      <div className="flex items-center mb-4">
+    <div className="bg-white rounded-xl p-4 shadow-md hover:shadow-lg transition-shadow duration-300">
+      <div className="flex items-center mb-3">
         <img 
           src={image} 
           alt={name} 
-          className="w-14 h-14 rounded-full object-cover mr-4 border-2 border-bali-teal"
+          className="w-12 h-12 rounded-full object-cover mr-3 border-2 border-bali-teal"
         />
         <div>
           <h4 className="font-poppins font-medium text-bali-deep">{name}</h4>
-          <p className="text-sm text-gray-500">{location}</p>
+          <p className="text-xs text-gray-500">{location}</p>
         </div>
       </div>
-      <div className="flex mb-3">
+      <div className="flex mb-2">
         {[...Array(5)].map((_, i) => (
           <Star 
             key={i} 
-            size={16} 
+            size={14} 
             className={`${i < rating ? 'text-bali-gold fill-bali-gold' : 'text-gray-300'} mr-1`}
           />
         ))}
       </div>
-      <blockquote className="text-gray-600 italic">{quote}</blockquote>
+      <blockquote className="text-gray-600 italic text-sm">{quote}</blockquote>
     </div>
   );
 };

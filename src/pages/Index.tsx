@@ -344,18 +344,18 @@ const Index = () => {
       </section>
 
       {/* Testimonials Section */}
-      <section id="testimonials" className="bg-bali-sand py-20">
+      <section id="testimonials" className="bg-bali-sand testimonial-section">
         <div className="section-container">
-          <div className="text-center mb-16 animated-element">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-bali-deep font-poppins">
+          <div className="text-center mb-10 animated-element">
+            <h2 className="text-3xl md:text-4xl font-bold mb-3 text-bali-deep font-poppins">
               What Our Australian Investors Say
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               Hear from fellow Australians who have already taken the leap into Bali property investment.
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="animated-element">
               <TestimonialCard 
                 name="Sarah Mitchell"
