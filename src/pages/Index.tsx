@@ -1,3 +1,4 @@
+
 import { useEffect } from 'react';
 import Navbar from '../components/Navbar';
 import PropertyCard from '../components/PropertyCard';
@@ -63,8 +64,8 @@ const Index = () => {
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
-            alt="Luxury Bali Villa" 
+            src="/lovable-uploads/4150754f-a774-4138-9316-46c5c403f56e.png" 
+            alt="Modern Bali Villa with Palm Trees" 
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 hero-gradient"></div>
