@@ -1,4 +1,3 @@
-
 import { useEffect } from 'react';
 import Navbar from '../components/Navbar';
 import PropertyCard from '../components/PropertyCard';
@@ -8,7 +7,19 @@ import AnimatedCounter from '../components/AnimatedCounter';
 import ContactForm from '../components/ContactForm';
 import { useToast } from '@/components/ui/use-toast';
 import { Button } from '@/components/ui/button';
-import { Download, Map, FileText, Key, Calculator, Handshake, Search, DollarSign } from 'lucide-react';
+import { 
+  Download, 
+  Map, 
+  FileText, 
+  Key, 
+  Calculator, 
+  Handshake, 
+  Search, 
+  DollarSign,
+  Phone,
+  Mail,
+  MapPin
+} from 'lucide-react';
 
 const Index = () => {
   const { toast } = useToast();
