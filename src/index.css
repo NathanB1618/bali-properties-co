@@ -106,3 +106,44 @@
 .navbar-scrolled {
   @apply bg-white shadow-md py-2;
 }
+
+/* Calculator styles */
+.bg-soft-green {
+  @apply bg-green-50;
+}
+
+.bg-bali-teal {
+  @apply bg-teal-600;
+}
+
+.bg-bali-deep {
+  @apply bg-blue-900;
+}
+
+.text-bali-teal {
+  @apply text-teal-600;
+}
+
+.text-bali-deep {
+  @apply text-blue-900;
+}
+
+.bg-bali-gold {
+  @apply bg-amber-500;
+}
+
+.text-bali-gold {
+  @apply text-amber-500;
+}
+
+.bg-bali-orange {
+  @apply bg-amber-600;
+}
+
+.hover\:bg-bali-orange:hover {
+  @apply bg-amber-600;
+}
+
+.bg-bali-sand {
+  @apply bg-amber-50;
+}

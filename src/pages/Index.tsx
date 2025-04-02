@@ -1,4 +1,3 @@
-
 import { useEffect } from 'react';
 import Navbar from '../components/Navbar';
 import PropertyCard from '../components/PropertyCard';
@@ -6,6 +5,7 @@ import InvestmentStep from '../components/InvestmentStep';
 import TestimonialCard from '../components/TestimonialCard';
 import AnimatedCounter from '../components/AnimatedCounter';
 import ContactForm from '../components/ContactForm';
+import ROICalculator from '../components/ROICalculator';
 import { useToast } from '@/components/ui/use-toast';
 import { Button } from '@/components/ui/button';
 import { 
@@ -26,7 +26,6 @@ const Index = () => {
   const { toast } = useToast();
 
   useEffect(() => {
-    // Animation for elements that should animate when they come into view
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -37,7 +36,6 @@ const Index = () => {
     }, { threshold: 0.1 });
 
     document.querySelectorAll('.animated-element').forEach(element => {
-      // Add an initial class to hide elements
       element.classList.add('animate-initial');
       observer.observe(element);
     });
@@ -83,7 +81,7 @@ const Index = () => {
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Button 
               size="lg" 
-              className="bg-bali-teal hover:bg-bali-deep text-white px-8 py-6 rounded-md text-lg"
+              className="bg-bali-teal hover:bg-bali-orange text-white px-8 py-6 rounded-md text-lg"
             >
               Explore Properties
             </Button>
@@ -390,6 +388,9 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      {/* ROI Calculator Section */}
+      <ROICalculator />
 
       {/* Contact Section */}
       <section id="contact" className="section-container">
