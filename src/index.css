@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -13,41 +14,34 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 173 55% 39%; /* Bali teal */
+    --primary-foreground: 180 19% 93%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 41 77% 66%; /* Bali gold */
+    --secondary-foreground: 196 40% 24%; 
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 196 40% 24%; /* Bali deep */
+    --accent-foreground: 180 19% 93%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --ring: 173 55% 39%;
 
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
@@ -74,7 +68,7 @@
     --accent-foreground: 210 40% 98%;
 
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 98%;
 
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
@@ -96,6 +90,36 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-poppins font-medium;
+  }
+}
+
+@layer components {
+  .section-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20;
+  }
+  
+  .animated-element {
+    @apply opacity-0;
+  }
+  
+  .animated-element.in-view {
+    @apply animate-slide-up;
+  }
+
+  .hero-gradient {
+    background: linear-gradient(rgba(38, 70, 83, 0.7), rgba(42, 157, 143, 0.4));
+  }
+  
+  .property-card {
+    @apply transition-all duration-300 hover:shadow-xl hover:scale-[1.02] cursor-pointer;
+  }
+  
+  .text-gradient {
+    @apply bg-gradient-to-r from-bali-teal to-bali-deep bg-clip-text text-transparent;
   }
 }
