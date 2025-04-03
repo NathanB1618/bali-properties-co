@@ -116,9 +116,9 @@ const Index = () => {
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md text-center animated-element">
               <h3 className="text-4xl font-bold text-bali-deep mb-2">
-                <AnimatedCounter end={5} suffix="+" prefix="$" />k
+                <AnimatedCounter end={3} suffix="k+" prefix="$" />
               </h3>
-              <p className="text-gray-600">Monthly Rental Income</p>
+              <p className="text-gray-600">Average Monthly Rental Income</p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md text-center animated-element">
               <h3 className="text-4xl font-bold text-bali-deep mb-2">
