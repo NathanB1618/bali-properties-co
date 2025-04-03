@@ -71,7 +71,7 @@ const Index = () => {
         
         <div className="container mx-auto px-4 relative z-10 text-center">
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-6 font-poppins leading-tight">
-            Own Your Paradise in Bali<br />
+            Get Your Paradise in Bali<br />
             <span className="text-bali-gold">Earn While You're Away</span>
           </h1>
           <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto">
