@@ -32,7 +32,7 @@ const Navbar = () => {
         <div className="flex items-center">
           <a href="#" className="flex items-center">
             <span className={`text-2xl font-bold font-poppins ${isScrolled ? 'text-bali-deep' : 'text-white'}`}>
-              Bali<span className="text-bali-gold">Dream</span>Investments
+              Bali<span className="text-bali-gold">Properties</span>.co
             </span>
           </a>
         </div>

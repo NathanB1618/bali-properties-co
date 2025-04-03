@@ -469,7 +469,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
-              <h3 className="text-xl font-bold mb-4 font-poppins">Bali<span className="text-bali-gold">Dream</span>Investments</h3>
+              <h3 className="text-xl font-bold mb-4 font-poppins">Bali<span className="text-bali-gold">Properties</span>.co</h3>
               <p className="text-white/70 mb-4">
                 Australian-owned company specializing in Bali real estate investments with exceptional returns.
               </p>
@@ -515,7 +515,7 @@ const Index = () => {
           
           <div className="border-t border-white/10 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
             <p className="text-white/60 text-sm">
-              © 2023 Bali Dream Investments. All rights reserved. ABN: 12 345 678 901
+              © 2023 BaliProperties.co. All rights reserved. ABN: 12 345 678 901
             </p>
             <div className="flex mt-4 md:mt-0">
               <a href="#" className="text-white/60 hover:text-white mx-2">Privacy Policy</a>
