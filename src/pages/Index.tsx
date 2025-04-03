@@ -1,3 +1,4 @@
+
 import { useEffect } from 'react';
 import Navbar from '../components/Navbar';
 import PropertyCard from '../components/PropertyCard';
@@ -192,46 +193,46 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="animated-element">
               <PropertyCard 
-                image="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-                title="Traditional Balinese Villa with Pool"
-                price="$245,000 AUD"
+                image="https://images.unsplash.com/photo-1583608564770-eb949348d8c7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                title="Private Tropical Villa with Pool"
+                price="$248,000 AUD"
                 location="Ubud, Bali"
                 bedrooms={2}
                 bathrooms={2}
                 size={120}
                 landSize={200}
-                expectedRent="$1,800/month AUD"
-                annualROI={8.8}
+                expectedRent="$1,850/month AUD"
+                annualROI={8.9}
               />
             </div>
             
             <div className="animated-element">
               <PropertyCard 
-                image="https://images.unsplash.com/photo-1570701123784-0043b8de675c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-                title="Open Concept Villa with Rice Field Views"
-                price="$320,000 AUD"
+                image="https://images.unsplash.com/photo-1611043714658-af3e56bc5299?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                title="Luxury Open-Air Bali Villa"
+                price="$325,000 AUD"
                 location="Canggu, Bali"
-                bedrooms={2}
+                bedrooms={3}
                 bathrooms={2}
                 size={150}
                 landSize={250}
-                expectedRent="$2,400/month AUD"
-                annualROI={9.0}
+                expectedRent="$2,450/month AUD"
+                annualROI={9.1}
               />
             </div>
             
             <div className="animated-element">
               <PropertyCard 
-                image="https://images.unsplash.com/photo-1582650625119-3a31a7d8b891?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-                title="Tropical Indoor/Outdoor Villa"
-                price="$295,000 AUD"
+                image="https://images.unsplash.com/photo-1604999333679-b86d54738315?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                title="Traditional Balinese Garden Villa"
+                price="$285,000 AUD"
                 location="Seminyak, Bali"
-                bedrooms={3}
+                bedrooms={2}
                 bathrooms={2}
-                size={140}
+                size={135}
                 landSize={220}
-                expectedRent="$2,200/month AUD"
-                annualROI={8.9}
+                expectedRent="$2,100/month AUD"
+                annualROI={8.8}
               />
             </div>
           </div>
