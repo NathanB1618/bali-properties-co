@@ -444,15 +444,15 @@ const Index = () => {
               <div className="space-y-3">
                 <div className="flex items-center">
                   <Phone size={18} className="text-bali-teal mr-3" />
-                  <span>+61 8 7123 4567</span>
+                  <span>+61 419 861 399</span>
                 </div>
                 <div className="flex items-center">
                   <Mail size={18} className="text-bali-teal mr-3" />
-                  <span>info@balidreaminvestments.com.au</span>
+                  <span>benbickford@gmail.com</span>
                 </div>
                 <div className="flex items-center">
                   <MapPin size={18} className="text-bali-teal mr-3" />
-                  <span>Office: Suite 305, 167 Collins St, Melbourne, Australia</span>
+                  <span>Melbourne, Victoria, Australia</span>
                 </div>
               </div>
             </div>
