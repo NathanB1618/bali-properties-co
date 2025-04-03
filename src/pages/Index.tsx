@@ -1,4 +1,3 @@
-
 import { useEffect } from 'react';
 import Navbar from '../components/Navbar';
 import PropertyCard from '../components/PropertyCard';
@@ -99,8 +98,8 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Stats Section - Updated background color */}
-      <section className="bg-bali-deep py-12 text-white">
+      {/* Stats Section */}
+      <section className="bg-[#264653] py-12 text-white">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="bg-white p-6 rounded-lg shadow-md text-center animated-element">
@@ -193,49 +192,49 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="animated-element">
               <PropertyCard 
-                image="https://images.unsplash.com/photo-1580440282860-8555b1ae102c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80"
-                title="Luxury Pool Villa in Ubud"
-                price="$258,000 AUD"
-                location="Ubud, Bali"
+                image="/lovable-uploads/39d93794-875a-4143-be1f-d399d316b117.png"
+                title="Modern Beachfront Pool Villa"
+                price="$345,000 AUD"
+                location="Canggu, Bali"
                 bedrooms={3}
                 bathrooms={3}
                 size={150}
                 landSize={300}
-                expectedRent="$2,100/month AUD"
-                annualROI={9.8}
-                poolSize="4m x 8m Infinity Pool"
-              />
-            </div>
-            
-            <div className="animated-element">
-              <PropertyCard 
-                image="https://images.unsplash.com/photo-1582719508461-905c673771fd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2025&q=80"
-                title="Modern Tropical Villa"
-                price="$345,000 AUD"
-                location="Canggu, Bali"
-                bedrooms={4}
-                bathrooms={3}
-                size={180}
-                landSize={350}
-                expectedRent="$2,950/month AUD"
+                expectedRent="$2,950/month"
                 annualROI={10.3}
-                poolSize="5m x 10m Lap Pool"
+                poolSize="5m x 8m Infinity Pool"
               />
             </div>
             
             <div className="animated-element">
               <PropertyCard 
-                image="https://images.unsplash.com/photo-1610641818989-c2051b5e2cfd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-                title="Traditional Balinese Pool Villa"
+                image="/lovable-uploads/f5dabefd-f084-48c6-a00a-559e2031b4fe.png"
+                title="Luxury A-Frame Glass Villa"
                 price="$295,000 AUD"
+                location="Ubud, Bali"
+                bedrooms={2}
+                bathrooms={2}
+                size={120}
+                landSize={250}
+                expectedRent="$2,400/month"
+                annualROI={9.8}
+                poolSize="4m x 6m Private Pool"
+              />
+            </div>
+            
+            <div className="animated-element">
+              <PropertyCard 
+                image="/lovable-uploads/b8768f8c-d2bb-48de-b6f5-1a7e3da609bc.png"
+                title="Contemporary Two-Story Villa"
+                price="$258,000 AUD"
                 location="Seminyak, Bali"
                 bedrooms={3}
                 bathrooms={2}
                 size={140}
                 landSize={280}
-                expectedRent="$2,400/month AUD"
+                expectedRent="$2,100/month"
                 annualROI={9.7}
-                poolSize="4m x 6m Garden Pool"
+                poolSize="3m x 5m Plunge Pool"
               />
             </div>
           </div>

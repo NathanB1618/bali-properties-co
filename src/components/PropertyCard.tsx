@@ -2,7 +2,6 @@
 import { FC } from 'react';
 import { Button } from '@/components/ui/button';
 import { 
-  Home, 
   BedDouble, 
   Bath, 
   CalendarDays, 
@@ -11,7 +10,8 @@ import {
   ArrowRight, 
   MapPin, 
   Maximize,
-  Waves
+  Waves,
+  Home
 } from 'lucide-react';
 
 interface PropertyCardProps {
