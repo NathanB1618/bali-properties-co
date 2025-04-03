@@ -24,6 +24,7 @@ interface PropertyCardProps {
   landSize: number;
   expectedRent: string;
   annualROI: number;
+  currency?: string;
 }
 
 const PropertyCard: FC<PropertyCardProps> = ({
@@ -36,7 +37,8 @@ const PropertyCard: FC<PropertyCardProps> = ({
   size,
   landSize,
   expectedRent,
-  annualROI
+  annualROI,
+  currency = "AUD"
 }) => {
   return (
     <div className="property-card bg-white rounded-xl overflow-hidden shadow-lg border border-gray-100">
