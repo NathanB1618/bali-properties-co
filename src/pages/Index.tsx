@@ -192,17 +192,17 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="animated-element">
               <PropertyCard 
-                image="/lovable-uploads/39d93794-875a-4143-be1f-d399d316b117.png"
-                title="Modern Beachfront Pool Villa"
-                price="$345,000 AUD"
-                location="Canggu, Bali"
-                bedrooms={3}
-                bathrooms={3}
-                size={150}
-                landSize={300}
-                expectedRent="$2,950/month"
-                annualROI={10.3}
-                poolSize="5m x 8m Infinity Pool"
+                image="/lovable-uploads/da58e1e9-7b2b-49ba-99b3-28867ee509d6.png"
+                title="Modern Minimalist Villa"
+                price="$375,000 AUD"
+                location="Berawa, Bali"
+                bedrooms={2}
+                bathrooms={2}
+                size={120}
+                landSize={200}
+                expectedRent="$2,800/month"
+                annualROI={9.5}
+                poolSize="4m x 7m Private Pool"
               />
             </div>
             
