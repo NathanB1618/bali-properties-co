@@ -200,8 +200,8 @@ const Index = () => {
                 bathrooms={2}
                 size={120}
                 landSize={200}
-                expectedRent="$2,800/month"
-                annualROI={9.5}
+                expectedRent="$4,200/month"
+                annualROI={14.3}
                 poolSize="4m x 7m Private Pool"
               />
             </div>
@@ -216,8 +216,8 @@ const Index = () => {
                 bathrooms={2}
                 size={120}
                 landSize={250}
-                expectedRent="$2,400/month"
-                annualROI={9.8}
+                expectedRent="$3,350/month"
+                annualROI={13.7}
                 poolSize="4m x 6m Private Pool"
               />
             </div>
@@ -232,8 +232,8 @@ const Index = () => {
                 bathrooms={2}
                 size={140}
                 landSize={280}
-                expectedRent="$2,100/month"
-                annualROI={9.7}
+                expectedRent="$2,900/month"
+                annualROI={13.4}
                 poolSize="3m x 5m Plunge Pool"
               />
             </div>
