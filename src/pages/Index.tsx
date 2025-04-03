@@ -192,46 +192,46 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="animated-element">
               <PropertyCard 
-                image="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-                title="Cozy Studio in Kuta"
-                price="$215,000 AUD"
-                location="Kuta, Bali"
-                bedrooms={1}
-                bathrooms={1}
-                size={65}
-                landSize={100}
-                expectedRent="$1,500/month AUD"
-                annualROI={8.4}
-              />
-            </div>
-            
-            <div className="animated-element">
-              <PropertyCard 
-                image="https://images.unsplash.com/photo-1598928506311-c55ded91a20c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-                title="Modern Apartment in Legian"
-                price="$295,000 AUD"
-                location="Legian, Bali"
-                bedrooms={2}
-                bathrooms={2}
-                size={85}
-                landSize={150}
-                expectedRent="$2,200/month AUD"
-                annualROI={8.9}
-              />
-            </div>
-            
-            <div className="animated-element">
-              <PropertyCard 
-                image="https://images.unsplash.com/photo-1560448204-61dc36dc98c8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-                title="Garden Villa in Ubud"
-                price="$345,000 AUD"
+                image="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                title="Traditional Balinese Villa with Pool"
+                price="$245,000 AUD"
                 location="Ubud, Bali"
                 bedrooms={2}
                 bathrooms={2}
-                size={110}
+                size={120}
                 landSize={200}
-                expectedRent="$2,800/month AUD"
-                annualROI={9.7}
+                expectedRent="$1,800/month AUD"
+                annualROI={8.8}
+              />
+            </div>
+            
+            <div className="animated-element">
+              <PropertyCard 
+                image="https://images.unsplash.com/photo-1570701123784-0043b8de675c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                title="Open Concept Villa with Rice Field Views"
+                price="$320,000 AUD"
+                location="Canggu, Bali"
+                bedrooms={2}
+                bathrooms={2}
+                size={150}
+                landSize={250}
+                expectedRent="$2,400/month AUD"
+                annualROI={9.0}
+              />
+            </div>
+            
+            <div className="animated-element">
+              <PropertyCard 
+                image="https://images.unsplash.com/photo-1582650625119-3a31a7d8b891?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                title="Tropical Indoor/Outdoor Villa"
+                price="$295,000 AUD"
+                location="Seminyak, Bali"
+                bedrooms={3}
+                bathrooms={2}
+                size={140}
+                landSize={220}
+                expectedRent="$2,200/month AUD"
+                annualROI={8.9}
               />
             </div>
           </div>
