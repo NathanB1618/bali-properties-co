@@ -110,7 +110,7 @@ const Index = () => {
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md text-center animated-element">
               <h3 className="text-4xl font-bold text-bali-deep mb-2">
-                <AnimatedCounter end={85} suffix="%" />
+                <AnimatedCounter end={82} suffix="%" />
               </h3>
               <p className="text-gray-600">Annual Occupancy Rate</p>
             </div>
@@ -122,7 +122,7 @@ const Index = () => {
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md text-center animated-element">
               <h3 className="text-4xl font-bold text-bali-deep mb-2">
-                <AnimatedCounter end={6} />
+                <AnimatedCounter end={6.5} decimal={1} />
               </h3>
               <p className="text-gray-600">Years Average ROI Payback</p>
             </div>

@@ -7,9 +7,16 @@ interface AnimatedCounterProps {
   duration?: number;
   prefix?: string;
   suffix?: string;
+  decimal?: number;
 }
 
-const AnimatedCounter = ({ end, duration = 2000, prefix = '', suffix = '' }: AnimatedCounterProps) => {
+const AnimatedCounter = ({ 
+  end, 
+  duration = 2000, 
+  prefix = '', 
+  suffix = '',
+  decimal = 0
+}: AnimatedCounterProps) => {
   const [count, setCount] = useState(0);
   const { ref, inView } = useInView({
     triggerOnce: true,
@@ -27,7 +34,9 @@ const AnimatedCounter = ({ end, duration = 2000, prefix = '', suffix = '' }: Ani
       const progress = timestamp - startTimeRef.current;
       
       const progressRatio = Math.min(progress / duration, 1);
-      const currentCount = Math.floor(progressRatio * end);
+      const currentCount = decimal 
+        ? Number((progressRatio * end).toFixed(decimal))
+        : Math.floor(progressRatio * end);
       
       if (currentCount !== countRef.current) {
         countRef.current = currentCount;
@@ -44,9 +53,9 @@ const AnimatedCounter = ({ end, duration = 2000, prefix = '', suffix = '' }: Ani
     return () => {
       startTimeRef.current = null;
     };
-  }, [inView, end, duration]);
+  }, [inView, end, duration, decimal]);
   
-  return <span ref={ref}>{prefix}{count}{suffix}</span>;
+  return <span ref={ref}>{prefix}{decimal ? count.toFixed(decimal) : count}{suffix}</span>;
 };
 
 export default AnimatedCounter;
