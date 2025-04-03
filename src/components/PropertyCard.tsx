@@ -10,7 +10,8 @@ import {
   BarChart3, 
   ArrowRight, 
   MapPin, 
-  Maximize 
+  Maximize,
+  Waves
 } from 'lucide-react';
 
 interface PropertyCardProps {
@@ -24,6 +25,7 @@ interface PropertyCardProps {
   landSize: number;
   expectedRent: string;
   annualROI: number;
+  poolSize?: string;
   currency?: string;
 }
 
@@ -38,6 +40,7 @@ const PropertyCard: FC<PropertyCardProps> = ({
   landSize,
   expectedRent,
   annualROI,
+  poolSize,
   currency = "AUD"
 }) => {
   return (
@@ -51,6 +54,12 @@ const PropertyCard: FC<PropertyCardProps> = ({
         <div className="absolute top-3 right-3 bg-bali-deep/80 text-white py-1 px-3 rounded-full text-sm font-medium">
           {price}
         </div>
+        {poolSize && (
+          <div className="absolute bottom-3 left-3 bg-bali-teal/90 text-white py-1 px-3 rounded-full text-xs font-medium flex items-center">
+            <Waves size={14} className="mr-1" />
+            Private Pool
+          </div>
+        )}
       </div>
       <div className="p-5">
         <h3 className="text-xl font-semibold font-poppins mb-2 text-bali-deep">{title}</h3>
@@ -76,6 +85,12 @@ const PropertyCard: FC<PropertyCardProps> = ({
             <Home size={16} className="mr-2 text-bali-teal" />
             <span className="text-sm">{landSize} m² Land</span>
           </div>
+          {poolSize && (
+            <div className="flex items-center col-span-2">
+              <Waves size={16} className="mr-2 text-bali-teal" />
+              <span className="text-sm">{poolSize}</span>
+            </div>
+          )}
         </div>
         
         <div className="border-t border-b py-3 my-3 grid grid-cols-2 gap-3">

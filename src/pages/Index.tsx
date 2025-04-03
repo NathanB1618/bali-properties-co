@@ -1,3 +1,4 @@
+
 import { useEffect } from 'react';
 import Navbar from '../components/Navbar';
 import PropertyCard from '../components/PropertyCard';
@@ -185,53 +186,56 @@ const Index = () => {
               Featured Investment Properties
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Explore our hand-picked selection of high-performing Bali properties with strong rental potential.
+              Explore our hand-picked selection of high-performing Bali villas with private pools and strong rental potential.
             </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="animated-element">
               <PropertyCard 
-                image="https://images.unsplash.com/photo-1583608564770-eb949348d8c7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-                title="Private Tropical Villa with Pool"
-                price="$248,000 AUD"
+                image="https://images.unsplash.com/photo-1580440282860-8555b1ae102c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80"
+                title="Luxury Pool Villa in Ubud"
+                price="$258,000 AUD"
                 location="Ubud, Bali"
-                bedrooms={2}
-                bathrooms={2}
-                size={120}
-                landSize={200}
-                expectedRent="$1,850/month AUD"
-                annualROI={8.9}
+                bedrooms={3}
+                bathrooms={3}
+                size={150}
+                landSize={300}
+                expectedRent="$2,100/month AUD"
+                annualROI={9.8}
+                poolSize="4m x 8m Infinity Pool"
               />
             </div>
             
             <div className="animated-element">
               <PropertyCard 
-                image="https://images.unsplash.com/photo-1611043714658-af3e56bc5299?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-                title="Luxury Open-Air Bali Villa"
-                price="$325,000 AUD"
+                image="https://images.unsplash.com/photo-1582719508461-905c673771fd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2025&q=80"
+                title="Modern Tropical Villa"
+                price="$345,000 AUD"
                 location="Canggu, Bali"
+                bedrooms={4}
+                bathrooms={3}
+                size={180}
+                landSize={350}
+                expectedRent="$2,950/month AUD"
+                annualROI={10.3}
+                poolSize="5m x 10m Lap Pool"
+              />
+            </div>
+            
+            <div className="animated-element">
+              <PropertyCard 
+                image="https://images.unsplash.com/photo-1610641818989-c2051b5e2cfd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                title="Traditional Balinese Pool Villa"
+                price="$295,000 AUD"
+                location="Seminyak, Bali"
                 bedrooms={3}
                 bathrooms={2}
-                size={150}
-                landSize={250}
-                expectedRent="$2,450/month AUD"
-                annualROI={9.1}
-              />
-            </div>
-            
-            <div className="animated-element">
-              <PropertyCard 
-                image="https://images.unsplash.com/photo-1604999333679-b86d54738315?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-                title="Traditional Balinese Garden Villa"
-                price="$285,000 AUD"
-                location="Seminyak, Bali"
-                bedrooms={2}
-                bathrooms={2}
-                size={135}
-                landSize={220}
-                expectedRent="$2,100/month AUD"
-                annualROI={8.8}
+                size={140}
+                landSize={280}
+                expectedRent="$2,400/month AUD"
+                annualROI={9.7}
+                poolSize="4m x 6m Garden Pool"
               />
             </div>
           </div>
