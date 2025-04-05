@@ -1,3 +1,4 @@
+
 import { useEffect } from 'react';
 import Navbar from '../components/Navbar';
 import PropertyCard from '../components/PropertyCard';
@@ -19,7 +20,8 @@ import {
   DollarSign,
   Phone,
   Mail,
-  MapPin
+  MapPin,
+  ArrowDown
 } from 'lucide-react';
 
 const Index = () => {
@@ -294,9 +296,27 @@ const Index = () => {
             </div>
           </div>
           
-          <div className="lg:pl-8 animated-element">
-            <div className="bg-bali-deep rounded-xl p-6 md:p-8 text-white">
-              <h3 className="text-2xl font-semibold mb-6 font-poppins">Free Investment Guide</h3>
+          <div className="lg:pl-8 animated-element curly-arrow-container">
+            {/* Curly Arrow SVG */}
+            <svg className="curly-arrow" viewBox="0 0 220 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10,10 Q60,5 80,40 T160,50 Q180,50 210,90" stroke="#FF0000" strokeWidth="5" fill="none" strokeLinecap="round"/>
+              <path d="M200,80 L210,90 L195,95" stroke="#FF0000" strokeWidth="5" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+            
+            <div className="bg-bali-deep rounded-xl p-6 md:p-8 text-white guide-highlight">
+              <div className="relative">
+                <h3 className="text-2xl font-semibold mb-2 font-poppins flex items-center">
+                  <span className="mr-2">Free Investment Guide</span>
+                  <span className="bg-red-500 text-white text-xs px-2 py-1 rounded-full animate-pulse">
+                    Limited Time
+                  </span>
+                </h3>
+                <div className="absolute -top-2 -right-2">
+                  <div className="bg-amber-500 rounded-full p-1 animate-bounce">
+                    <ArrowDown className="h-5 w-5 text-white" />
+                  </div>
+                </div>
+              </div>
               <p className="mb-6">
                 Download our comprehensive guide on investing in Bali real estate. Includes:
               </p>
@@ -335,9 +355,12 @@ const Index = () => {
                 </li>
               </ul>
               <Button 
-                className="w-full bg-bali-gold hover:bg-bali-orange text-bali-deep font-medium"
+                className="w-full bg-bali-gold hover:bg-bali-orange text-bali-deep font-medium relative group"
                 onClick={handleDownloadGuide}
               >
+                <span className="absolute -right-1 -top-1 bg-red-500 text-white text-xs px-2 py-0.5 rounded-full group-hover:scale-110 transition-transform">
+                  Free!
+                </span>
                 <Download size={18} className="mr-2" />
                 Download Investment Guide
               </Button>
