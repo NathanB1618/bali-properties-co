@@ -1,4 +1,3 @@
-
 import { useEffect } from 'react';
 import Navbar from '../components/Navbar';
 import PropertyCard from '../components/PropertyCard';
@@ -296,13 +295,7 @@ const Index = () => {
             </div>
           </div>
           
-          <div className="lg:pl-8 animated-element curly-arrow-container">
-            {/* Curly Arrow SVG */}
-            <svg className="curly-arrow" viewBox="0 0 220 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M10,10 Q60,5 80,40 T160,50 Q180,50 210,90" stroke="#FF0000" strokeWidth="5" fill="none" strokeLinecap="round"/>
-              <path d="M200,80 L210,90 L195,95" stroke="#FF0000" strokeWidth="5" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
-            </svg>
-            
+          <div className="lg:pl-8 animated-element">
             <div className="bg-bali-deep rounded-xl p-6 md:p-8 text-white guide-highlight">
               <div className="relative">
                 <h3 className="text-2xl font-semibold mb-2 font-poppins flex items-center">
