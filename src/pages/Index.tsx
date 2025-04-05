@@ -142,7 +142,7 @@ const Index = () => {
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="bg-white p-8 rounded-xl shadow-md flex flex-col items-center text-center animated-element">
+          <div className="bg-[#ECECEC] p-8 rounded-xl shadow-md flex flex-col items-center text-center animated-element">
             <div className="bg-bali-sand p-4 rounded-full mb-6">
               <DollarSign size={36} className="text-bali-teal" />
             </div>
@@ -153,7 +153,7 @@ const Index = () => {
             </p>
           </div>
           
-          <div className="bg-white p-8 rounded-xl shadow-md flex flex-col items-center text-center animated-element">
+          <div className="bg-[#ECECEC] p-8 rounded-xl shadow-md flex flex-col items-center text-center animated-element">
             <div className="bg-bali-sand p-4 rounded-full mb-6">
               <Map size={36} className="text-bali-teal" />
             </div>
@@ -164,7 +164,7 @@ const Index = () => {
             </p>
           </div>
           
-          <div className="bg-white p-8 rounded-xl shadow-md flex flex-col items-center text-center animated-element">
+          <div className="bg-[#ECECEC] p-8 rounded-xl shadow-md flex flex-col items-center text-center animated-element">
             <div className="bg-bali-sand p-4 rounded-full mb-6">
               <Calculator size={36} className="text-bali-teal" />
             </div>
