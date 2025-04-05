@@ -300,9 +300,6 @@ const Index = () => {
               <div className="relative">
                 <h3 className="text-2xl font-semibold mb-2 font-poppins flex items-center">
                   <span className="mr-2">Free Investment Guide</span>
-                  <span className="bg-red-500 text-white text-xs px-2 py-1 rounded-full animate-pulse">
-                    Limited Time
-                  </span>
                 </h3>
                 <div className="absolute -top-2 -right-2">
                   <div className="bg-amber-500 rounded-full p-1 animate-bounce">
