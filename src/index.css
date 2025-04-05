@@ -83,7 +83,7 @@
 
 /* Reduced height testimonial section */
 .testimonial-section {
-  @apply py-10 md:py-16;
+  @apply py-6 md:py-12;
 }
 
 .hero-gradient {
