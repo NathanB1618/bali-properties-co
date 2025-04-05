@@ -442,7 +442,7 @@ const Index = () => {
                 </li>
               </ul>
             </div>
-            <div className="bg-white rounded-xl p-6 shadow-md">
+            <div className="bg-[#ECECEC] rounded-xl p-6 shadow-md">
               <h4 className="font-semibold text-lg mb-4 text-bali-deep">Contact Information</h4>
               <div className="space-y-3">
                 <div className="flex items-center">
