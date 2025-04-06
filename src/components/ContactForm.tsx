@@ -126,7 +126,7 @@ const ContactForm = () => {
         
         <Button 
           type="submit" 
-          className="w-full bg-[#f59e0b] hover:bg-amber-600 text-white font-medium py-3 rounded-lg transition-colors"
+          className="w-full bg-[#f59e0b] hover:bg-amber-600 text-white font-medium text-lg py-4 h-14 rounded-lg transition-colors"
         >
           Get My Free Consultation
         </Button>
