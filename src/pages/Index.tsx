@@ -345,13 +345,13 @@ const Index = () => {
                 </li>
               </ul>
               <Button 
-                className="w-full bg-bali-gold hover:bg-bali-orange text-bali-deep font-medium relative group"
+                className="w-full bg-bali-gold hover:bg-bali-orange text-bali-deep font-medium relative group py-6 text-lg"
                 onClick={handleDownloadGuide}
               >
                 <span className="absolute -right-1 -top-1 bg-red-500 text-white text-xs px-2 py-0.5 rounded-full group-hover:scale-110 transition-transform">
                   Free!
                 </span>
-                <Download size={18} className="mr-2" />
+                <Download size={24} className="mr-2" />
                 Download Investment Guide
               </Button>
             </div>
