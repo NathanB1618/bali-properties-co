@@ -162,6 +162,15 @@
   color: #1e3a8a;
 }
 
+/* New amber button color */
+.bg-amber-consultation {
+  background-color: #f59e0b;
+}
+
+.hover\:bg-amber-consultation:hover {
+  background-color: #f59e0b;
+}
+
 /* Guide highlight styles */
 .guide-highlight {
   position: relative;
