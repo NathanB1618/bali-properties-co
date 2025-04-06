@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -150,6 +151,15 @@
 
 .bg-bali-sand {
   @apply bg-amber-50;
+}
+
+/* New rich blue background color */
+.bg-rich-blue {
+  background-color: #1e3a8a;
+}
+
+.text-rich-blue {
+  color: #1e3a8a;
 }
 
 /* Guide highlight styles */

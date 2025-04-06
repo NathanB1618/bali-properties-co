@@ -43,8 +43,8 @@ const ContactForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="bg-white rounded-xl shadow-lg p-6 md:p-8">
-      <h3 className="text-2xl font-poppins font-semibold text-bali-deep mb-6">Request Free Consultation</h3>
+    <form onSubmit={handleSubmit} className="bg-rich-blue rounded-xl shadow-lg p-6 md:p-8 text-white">
+      <h3 className="text-2xl font-poppins font-semibold text-white mb-6">Request Free Consultation</h3>
       
       <div className="space-y-4">
         <div className="relative">
@@ -56,7 +56,7 @@ const ContactForm = () => {
             value={formData.name}
             onChange={handleChange}
             required
-            className="w-full pl-10 pr-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-bali-teal"
+            className="w-full pl-10 pr-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-bali-teal text-gray-800"
           />
         </div>
         
@@ -69,7 +69,7 @@ const ContactForm = () => {
             value={formData.email}
             onChange={handleChange}
             required
-            className="w-full pl-10 pr-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-bali-teal"
+            className="w-full pl-10 pr-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-bali-teal text-gray-800"
           />
         </div>
         
@@ -81,7 +81,7 @@ const ContactForm = () => {
             placeholder="Phone Number"
             value={formData.phone}
             onChange={handleChange}
-            className="w-full pl-10 pr-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-bali-teal"
+            className="w-full pl-10 pr-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-bali-teal text-gray-800"
           />
         </div>
 
@@ -94,7 +94,7 @@ const ContactForm = () => {
               placeholder="Your City in Australia"
               value={formData.location}
               onChange={handleChange}
-              className="w-full pl-10 pr-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-bali-teal"
+              className="w-full pl-10 pr-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-bali-teal text-gray-800"
             />
           </div>
           
@@ -104,7 +104,7 @@ const ContactForm = () => {
               name="budget"
               value={formData.budget}
               onChange={handleChange}
-              className="w-full pl-10 pr-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-bali-teal appearance-none"
+              className="w-full pl-10 pr-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-bali-teal appearance-none text-gray-800"
             >
               <option value="">Investment Budget</option>
               <option value="$100k-$200k">$100k - $200k</option>
@@ -121,7 +121,7 @@ const ContactForm = () => {
           value={formData.message}
           onChange={handleChange}
           rows={4}
-          className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-bali-teal"
+          className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-bali-teal text-gray-800"
         />
         
         <Button 
@@ -131,7 +131,7 @@ const ContactForm = () => {
           Get My Free Consultation
         </Button>
         
-        <p className="text-xs text-gray-500 text-center mt-3">
+        <p className="text-xs text-gray-300 text-center mt-3">
           By submitting this form, you agree to our privacy policy and terms of service.
         </p>
       </div>
