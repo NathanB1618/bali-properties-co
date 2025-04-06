@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -125,20 +124,12 @@
   @apply bg-blue-900;
 }
 
-.bg-bali-blue {
-  @apply bg-[#1e3a8a];
-}
-
 .text-bali-teal {
   @apply text-teal-600;
 }
 
 .text-bali-deep {
   @apply text-blue-900;
-}
-
-.text-bali-blue {
-  @apply text-[#1e3a8a];
 }
 
 .bg-bali-gold {

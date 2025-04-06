@@ -59,6 +59,7 @@ const Index = () => {
     <>
       <Navbar />
       
+      {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
@@ -98,6 +99,7 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Stats Section */}
       <section className="bg-[#264653] py-12 text-white">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -129,6 +131,7 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Benefits Section */}
       <section id="benefits" className="section-container">
         <div className="text-center mb-16 animated-element">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-bali-deep font-poppins">
@@ -175,6 +178,7 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Property Showcase Section */}
       <section id="properties" className="bg-gray-50 py-20">
         <div className="section-container">
           <div className="text-center mb-16 animated-element">
@@ -247,6 +251,7 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Investment Guide Section */}
       <section id="guide" className="section-container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
@@ -291,7 +296,7 @@ const Index = () => {
           </div>
           
           <div className="lg:pl-8 animated-element">
-            <div className="bg-[#1e3a8a] rounded-xl p-6 md:p-8 text-white guide-highlight">
+            <div className="bg-bali-deep rounded-xl p-6 md:p-8 text-white guide-highlight">
               <div className="relative">
                 <h3 className="text-2xl font-semibold mb-2 font-poppins flex items-center">
                   <span className="mr-2">Free Investment Guide</span>
@@ -354,6 +359,7 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Testimonials Section */}
       <section id="testimonials" className="bg-bali-sand testimonial-section">
         <div className="section-container">
           <div className="text-center mb-10 animated-element">
@@ -399,8 +405,10 @@ const Index = () => {
         </div>
       </section>
 
+      {/* ROI Calculator Section */}
       <ROICalculator />
 
+      {/* Contact Section */}
       <section id="contact" className="section-container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div className="animated-element">
@@ -472,6 +480,7 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Footer */}
       <footer className="bg-bali-deep text-white py-12">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
