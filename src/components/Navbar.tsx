@@ -51,7 +51,7 @@ const Navbar = () => {
           <a href="#testimonials" className={`font-medium hover:text-bali-teal transition-colors ${isScrolled ? 'text-bali-deep' : 'text-white'}`}>
             Testimonials
           </a>
-          <Button className="bg-[#f59e0b] hover:bg-amber-600 text-white rounded-md">
+          <Button className="bg-[#0d9488] hover:bg-teal-700 text-white rounded-md">
             Get Free Consultation
           </Button>
         </nav>
@@ -101,7 +101,7 @@ const Navbar = () => {
             >
               Testimonials
             </a>
-            <Button className="bg-[#f59e0b] hover:bg-amber-600 text-white w-full">
+            <Button className="bg-[#0d9488] hover:bg-teal-700 text-white w-full">
               Get Free Consultation
             </Button>
           </div>
