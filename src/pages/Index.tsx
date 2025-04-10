@@ -1,4 +1,3 @@
-
 import { useEffect } from 'react';
 import Navbar from '../components/Navbar';
 import PropertyCard from '../components/PropertyCard';
@@ -65,9 +64,9 @@ const Index = () => {
   };
 
   const scrollToContent = () => {
-    const benefitsSection = document.getElementById('benefits');
-    if (benefitsSection) {
-      benefitsSection.scrollIntoView({ behavior: 'smooth' });
+    const statsSection = document.getElementById('stats');
+    if (statsSection) {
+      statsSection.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
@@ -127,7 +126,7 @@ const Index = () => {
       </section>
 
       {/* Stats Section */}
-      <section className="bg-[#264653] py-12 text-white">
+      <section id="stats" className="bg-[#264653] py-12 text-white">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="bg-white p-6 rounded-lg shadow-md text-center animated-element">
