@@ -22,6 +22,14 @@ const Navbar = () => {
     };
   }, []);
 
+  const scrollToContact = () => {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+      setMobileMenuOpen(false);
+    }
+  };
+
   return (
     <header 
       className={`fixed w-full z-40 transition-all duration-300 ${
@@ -51,7 +59,10 @@ const Navbar = () => {
           <a href="#testimonials" className={`font-medium hover:text-bali-teal transition-colors ${isScrolled ? 'text-bali-deep' : 'text-white'}`}>
             Testimonials
           </a>
-          <Button className="bg-[#0d9488] hover:bg-teal-700 text-white rounded-md">
+          <Button 
+            className="bg-[#0d9488] hover:bg-teal-700 text-white rounded-md"
+            onClick={scrollToContact}
+          >
             Get Free Consultation
           </Button>
         </nav>
@@ -101,7 +112,10 @@ const Navbar = () => {
             >
               Testimonials
             </a>
-            <Button className="bg-[#0d9488] hover:bg-teal-700 text-white w-full">
+            <Button 
+              className="bg-[#0d9488] hover:bg-teal-700 text-white w-full"
+              onClick={scrollToContact}
+            >
               Get Free Consultation
             </Button>
           </div>
