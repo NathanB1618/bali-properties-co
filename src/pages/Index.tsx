@@ -1,3 +1,4 @@
+
 import { useEffect } from 'react';
 import Navbar from '../components/Navbar';
 import PropertyCard from '../components/PropertyCard';
@@ -55,6 +56,13 @@ const Index = () => {
     });
   };
 
+  const scrollToProperties = () => {
+    const propertiesSection = document.getElementById('properties');
+    if (propertiesSection) {
+      propertiesSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <>
       <Navbar />
@@ -83,6 +91,7 @@ const Index = () => {
             <Button 
               size="lg" 
               className="bg-bali-teal hover:bg-bali-orange text-white px-8 py-6 rounded-md text-lg"
+              onClick={scrollToProperties}
             >
               Explore Properties
             </Button>
