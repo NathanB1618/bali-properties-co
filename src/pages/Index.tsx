@@ -1,4 +1,3 @@
-
 import { useEffect } from 'react';
 import Navbar from '../components/Navbar';
 import PropertyCard from '../components/PropertyCard';
@@ -205,10 +204,10 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Property Showcase Section */}
-      <section id="properties" className="bg-gray-50 py-20">
+      {/* Property Showcase Section - reducing vertical padding */}
+      <section id="properties" className="bg-gray-50 py-12 md:py-16">
         <div className="section-container">
-          <div className="text-center mb-16 animated-element">
+          <div className="text-center mb-12 animated-element">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-bali-deep font-poppins">
               Featured Investment Properties
             </h2>
