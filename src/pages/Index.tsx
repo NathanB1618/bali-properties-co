@@ -21,7 +21,8 @@ import {
   Phone,
   Mail,
   MapPin,
-  ArrowDown
+  ArrowDown,
+  ChevronDown
 } from 'lucide-react';
 
 const Index = () => {
@@ -60,6 +61,13 @@ const Index = () => {
     const propertiesSection = document.getElementById('properties');
     if (propertiesSection) {
       propertiesSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const scrollToContent = () => {
+    const benefitsSection = document.getElementById('benefits');
+    if (benefitsSection) {
+      benefitsSection.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
@@ -104,6 +112,16 @@ const Index = () => {
               <Download size={20} className="mr-2" />
               Get Investment Guide
             </Button>
+          </div>
+        </div>
+        
+        {/* Scroll down arrow */}
+        <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-10 cursor-pointer" onClick={scrollToContent}>
+          <div className="flex flex-col items-center text-white">
+            <span className="text-sm mb-2 text-white/80">Scroll Down</span>
+            <div className="w-12 h-12 rounded-full bg-bali-teal/80 flex items-center justify-center animate-bounce">
+              <ChevronDown size={24} />
+            </div>
           </div>
         </div>
       </section>
