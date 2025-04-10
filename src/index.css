@@ -108,7 +108,7 @@
 
 /* Navbar styles when scrolled */
 .navbar-scrolled {
-  @apply bg-white shadow-md py-2;
+  @apply bg-white shadow-md py-4;
 }
 
 /* Calculator styles */
