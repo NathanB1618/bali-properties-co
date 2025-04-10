@@ -58,8 +58,8 @@ const HeroSection = ({ onExploreProperties, onScrollToContent }: HeroSectionProp
         </div>
       </div>
       
-      {/* Scroll down arrow */}
-      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-10 cursor-pointer" onClick={onScrollToContent}>
+      {/* Scroll down arrow - removed onClick functionality */}
+      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-10">
         <div className="flex flex-col items-center text-white">
           <span className="text-sm mb-2 text-white/80">Scroll Down</span>
           <div className="w-12 h-12 rounded-full bg-bali-teal/80 flex items-center justify-center animate-bounce">
