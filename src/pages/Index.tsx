@@ -59,7 +59,28 @@ const Index = () => {
   const scrollToProperties = () => {
     const propertiesSection = document.getElementById('properties');
     if (propertiesSection) {
-      propertiesSection.scrollIntoView({ behavior: 'smooth' });
+      // Smooth scroll with a slower duration
+      propertiesSection.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      });
+      
+      // Alternative approach using window.scrollTo for more control
+      // const propertiesSectionPosition = propertiesSection.getBoundingClientRect().top + window.pageYOffset;
+      // window.scrollTo({
+      //   top: propertiesSectionPosition,
+      //   behavior: 'smooth'
+      // });
+    }
+  };
+
+  const scrollToContact = () => {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      });
     }
   };
 
