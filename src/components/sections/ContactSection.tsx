@@ -22,7 +22,7 @@ const ContactSection = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7"></path>
                   </svg>
                 </span>
-                <span className="font-bold">10+ years experience in Bali real estate</span>
+                <span>10+ years experience in Bali real estate</span>
               </li>
               <li className="flex items-start">
                 <span className="bg-bali-teal rounded-full p-1 mr-3 mt-1">
@@ -30,7 +30,7 @@ const ContactSection = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7"></path>
                   </svg>
                 </span>
-                <span className="font-bold">Australian-owned and operated company</span>
+                <span>Australian-owned and operated company</span>
               </li>
               <li className="flex items-start">
                 <span className="bg-bali-teal rounded-full p-1 mr-3 mt-1">
@@ -38,7 +38,7 @@ const ContactSection = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7"></path>
                   </svg>
                 </span>
-                <span className="font-bold">Comprehensive management services</span>
+                <span>Comprehensive management services</span>
               </li>
               <li className="flex items-start">
                 <span className="bg-bali-teal rounded-full p-1 mr-3 mt-1">
@@ -46,7 +46,7 @@ const ContactSection = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7"></path>
                   </svg>
                 </span>
-                <span className="font-bold">Strong network of legal and property experts</span>
+                <span>Strong network of legal and property experts</span>
               </li>
             </ul>
           </div>
