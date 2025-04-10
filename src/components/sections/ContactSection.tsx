@@ -22,7 +22,7 @@ const ContactSection = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7"></path>
                   </svg>
                 </span>
-                <span>10+ years experience in Bali real estate</span>
+                <span className="font-bold">10+ years experience in Bali real estate</span>
               </li>
               <li className="flex items-start">
                 <span className="bg-bali-teal rounded-full p-1 mr-3 mt-1">
@@ -30,7 +30,7 @@ const ContactSection = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7"></path>
                   </svg>
                 </span>
-                <span>Australian-owned and operated company</span>
+                <span className="font-bold">Australian-owned and operated company</span>
               </li>
               <li className="flex items-start">
                 <span className="bg-bali-teal rounded-full p-1 mr-3 mt-1">
@@ -38,7 +38,7 @@ const ContactSection = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7"></path>
                   </svg>
                 </span>
-                <span>Comprehensive management services</span>
+                <span className="font-bold">Comprehensive management services</span>
               </li>
               <li className="flex items-start">
                 <span className="bg-bali-teal rounded-full p-1 mr-3 mt-1">
@@ -46,7 +46,7 @@ const ContactSection = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7"></path>
                   </svg>
                 </span>
-                <span>Strong network of legal and property experts</span>
+                <span className="font-bold">Strong network of legal and property experts</span>
               </li>
             </ul>
           </div>
@@ -55,15 +55,15 @@ const ContactSection = () => {
             <div className="space-y-3">
               <div className="flex items-center">
                 <Phone size={18} className="text-bali-teal mr-3" />
-                <span>+61 419 861 399</span>
+                <span className="font-bold">+61 419 861 399</span>
               </div>
               <div className="flex items-center">
                 <Mail size={18} className="text-bali-teal mr-3" />
-                <span>benbickford@gmail.com</span>
+                <span className="font-bold">benbickford@gmail.com</span>
               </div>
               <div className="flex items-center">
                 <MapPin size={18} className="text-bali-teal mr-3" />
-                <span>Melbourne, Victoria, Australia</span>
+                <span className="font-bold">Melbourne, Victoria, Australia</span>
               </div>
             </div>
           </div>
