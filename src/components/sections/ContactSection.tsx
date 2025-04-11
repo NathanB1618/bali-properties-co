@@ -22,7 +22,7 @@ const ContactSection = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7"></path>
                   </svg>
                 </span>
-                <span>Professional experienced in Bali real estate</span>
+                <span>Professionally experienced in Bali real estate</span>
               </li>
               <li className="flex items-start">
                 <span className="bg-bali-teal rounded-full p-1 mr-3 mt-1">
