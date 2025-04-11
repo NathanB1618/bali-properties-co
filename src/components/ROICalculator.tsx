@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
@@ -35,38 +34,17 @@ const ROICalculator = () => {
   const [results, setResults] = useState<CalculationResult | null>(null);
 
   const handleCalculate = () => {
-    // Calculate available rental days (accounting for personal use)
     const availableRentalDays = 365 - personalUseDays;
-    
-    // Calculate expected occupied days based on occupancy rate
     const occupiedDays = Math.floor(availableRentalDays * (occupancyRate / 100));
-    
-    // Calculate annual gross income
     const annualGrossIncome = occupiedDays * nightlyRate;
-    
-    // Calculate management expenses
     const managementExpenses = annualGrossIncome * (managementFee / 100);
-    
-    // Calculate maintenance expenses
     const maintenanceExpenses = propertyValue * (maintenanceFee / 100);
-    
-    // Calculate total annual expenses
     const annualExpenses = managementExpenses + maintenanceExpenses;
-    
-    // Calculate net annual return
     const netAnnualReturn = annualGrossIncome - annualExpenses;
-    
-    // Calculate rental yield
     const rentalYield = (netAnnualReturn / propertyValue) * 100;
-    
-    // Estimate 5-year capital growth (assuming 8% annual growth in Bali's prime areas)
     const annualCapitalGrowthRate = 0.08; 
     const estimatedCapitalGrowth = propertyValue * Math.pow(1 + annualCapitalGrowthRate, 5) - propertyValue;
-    
-    // Calculate total 5-year return (net rental income over 5 years + capital growth)
     const total5YearReturn = (netAnnualReturn * 5) + estimatedCapitalGrowth;
-    
-    // Update results state
     setResults({
       annualGrossIncome,
       annualExpenses,
@@ -77,7 +55,6 @@ const ROICalculator = () => {
     });
   };
 
-  // Format currency for display
   const formatCurrency = (amount: number): string => {
     return `AUD $${Math.round(amount).toLocaleString()}`;
   };
@@ -237,7 +214,7 @@ const ROICalculator = () => {
                 <div className="flex justify-between items-center pb-2 border-b border-green-200">
                   <div className="flex items-center gap-2">
                     <TrendingUpIcon className="text-blue-600" size={18} />
-                    <span className="font-medium">Estimated 5-Year Capital Growth:</span>
+                    <span className="font-medium">Estimated 5-Year Capital Growth +8%yr:</span>
                   </div>
                   <span className="font-semibold">{formatCurrency(results.estimatedCapitalGrowth)}</span>
                 </div>
