@@ -42,7 +42,7 @@ const BenefitsSection = () => {
           </div>
           <h3 className="text-xl font-semibold mb-4 text-bali-deep">Capital Growth</h3>
           <p className="text-gray-600">
-            Bali property values have consistently appreciated 15-20% annually in prime areas, 
+            Bali property values have consistently appreciated 10-15% annually in prime areas, 
             creating excellent long-term wealth building opportunities.
           </p>
         </div>
