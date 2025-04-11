@@ -8,9 +8,9 @@ const StatsSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="bg-white p-6 rounded-lg shadow-md text-center animated-element">
             <h3 className="text-4xl font-bold text-bali-deep mb-2">
-              📈 <AnimatedCounter end={14} suffix="%" />
+              📈 <AnimatedCounter end={12} suffix="%" />
             </h3>
-            <p className="text-gray-600">Average ROI</p>
+            <p className="text-gray-600">Average Annual ROI</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md text-center animated-element">
             <h3 className="text-4xl font-bold text-bali-deep mb-2">
