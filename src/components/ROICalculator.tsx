@@ -59,8 +59,8 @@ const ROICalculator = () => {
     // Calculate rental yield
     const rentalYield = (netAnnualReturn / propertyValue) * 100;
     
-    // Estimate 5-year capital growth (assuming 10% annual growth in Bali's prime areas)
-    const annualCapitalGrowthRate = 0.10; 
+    // Estimate 5-year capital growth (assuming 8% annual growth in Bali's prime areas)
+    const annualCapitalGrowthRate = 0.08; 
     const estimatedCapitalGrowth = propertyValue * Math.pow(1 + annualCapitalGrowthRate, 5) - propertyValue;
     
     // Calculate total 5-year return (net rental income over 5 years + capital growth)
