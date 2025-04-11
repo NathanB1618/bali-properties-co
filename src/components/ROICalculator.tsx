@@ -31,7 +31,7 @@ const ROICalculator = () => {
   const [nightlyRate, setNightlyRate] = useState<number>(250);
   const [managementFee, setManagementFee] = useState<number>(15);
   const [occupancyRate, setOccupancyRate] = useState<number>(75);
-  const [maintenanceFee, setMaintenanceFee] = useState<number>(2);
+  const [maintenanceFee, setMaintenanceFee] = useState<number>(3);
   const [results, setResults] = useState<CalculationResult | null>(null);
 
   const handleCalculate = () => {
