@@ -14,9 +14,9 @@ const StatsSection = () => {
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md text-center animated-element">
             <h3 className="text-4xl font-bold text-bali-deep mb-2">
-              🏠 <AnimatedCounter end={82} suffix="%" />
+              🏠 <AnimatedCounter end={80} suffix="%" />
             </h3>
-            <p className="text-gray-600">Annual Occupancy Rate</p>
+            <p className="text-gray-600">Average Occupancy Rate</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md text-center animated-element">
             <h3 className="text-4xl font-bold text-bali-deep mb-2">
