@@ -26,7 +26,7 @@ const StatsSection = () => {
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md text-center animated-element">
             <h3 className="text-4xl font-bold text-bali-deep mb-2">
-              ⏱️ <AnimatedCounter end={6.5} decimal={1} />
+              ⏱️ <AnimatedCounter end={6.5} decimal={1} suffix=" years" />
             </h3>
             <p className="text-gray-600">Years Average ROI Payback</p>
           </div>
